@@ -1,9 +1,12 @@
 import "./App.css";
+import Body from "./components/Body";
+import Head from "./components/Head";
 
 function App() {
   return (
     <>
-      <h1 className="bg-blue-200">hi</h1>
+      <Head />
+      <Body />
     </>
   );
 }
