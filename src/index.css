@@ -2,3 +2,111 @@
 @tailwind components;
 @tailwind utilities;
 
+
+.main-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    padding: 2px;
+    background-color: #f0f0f0;
+}
+
+/* Sidebar.css */
+/* Sidebar.css */
+.sidebar {
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 250px; /* Adjust the width as needed */
+  }
+  
+  .section-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  .subscription-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .subscription-list li {
+    margin-bottom: 10px;
+    cursor: pointer;
+    color: #333;
+    transition: color 0.3s ease;
+  }
+  
+  .subscription-list li:hover {
+    color: #0073e6; /* Change the color on hover to resemble YouTube's link color */
+  }
+  
+/* Head.css */
+.header {
+    display: grid;
+    grid-template-columns: 1fr 12fr 1fr;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.menu-icon {
+    height: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.youtube-logo {
+    height: 56px;
+}
+
+.header-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.search-input:focus {
+    border-color: #007bff;
+}
+
+.search-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    padding: 10px 20px;
+    margin-left: 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.user-icon {
+    height: 32px;
+    margin-left: 10px;
+    cursor: pointer;
+}
