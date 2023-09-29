@@ -15,12 +15,41 @@
 
 /* Sidebar.css */
 /* Sidebar.css */
+/* Sidebar.css */
 .sidebar {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 250px;
-    /* Adjust the width as needed */
+    height: 100vh;
+
+    @media screen and (max-width: 768px) {
+        /* Adjust layout for smaller screens */
+        width: 100%;
+    }
+
+    .section-title {
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+        color: #333;
+    }
+
+    .subscription-list li {
+        margin-bottom: 10px;
+        cursor: pointer;
+        color: #333;
+        transition: color 0.3s ease;
+
+        @media screen and (max-width: 768px) {
+            /* Adjust font size for smaller screens */
+            font-size: 16px;
+        }
+    }
+}
+
+.section {
+    width: 170px;
 }
 
 .sidebar2 {
@@ -28,7 +57,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
     width: 60px;
-
+    height: 100vh;
 }
 
 .section-title {
@@ -118,4 +147,112 @@
     height: 32px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+/* styles.css */
+/* Button List */
+/* styles.css */
+.btn-menu-top {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px;
+    /* background-color: #fff;
+    border-bottom: 1px solid #ccc; */
+
+    @media screen and (max-width: 768px) {
+        /* Adjust spacing between buttons for smaller screens */
+        gap: 5px;
+        padding: 5px;
+    }
+}
+
+
+.button-container {
+    padding: 0;
+    margin: 0;
+}
+
+.btn-list {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 8px 16px;
+    color: #333;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn-list:hover {
+    background-color: #ddd;
+}
+
+/* End */
+
+
+/* video card css */
+
+/* Add this CSS to your stylesheets */
+/* ... Existing styles ... */
+
+/* video card.css */
+/* Add this CSS to your stylesheets */
+.video-card {
+    width: 300px;
+    margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.thumbnail {
+    flex: 0 0 40%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px 0 0 10px;
+}
+
+.video-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.video-details {
+    flex: 1;
+    padding: 10px;
+}
+
+.video-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.video-channel {
+    font-size: 14px;
+    color: #555;
+    margin: 5px 0;
+}
+
+.video-info {
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.video-views {
+    margin-right: 10px;
+}
+
+/* end */
+
+/* video-Container */
+.video-Container {
+    display: flex;
+    flex-wrap: wrap;
 }

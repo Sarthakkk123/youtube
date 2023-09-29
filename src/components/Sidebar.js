@@ -18,61 +18,62 @@ import { useSelector } from "react-redux";
 const Sidebar = () => {
   const isMenuOpen = useSelector((state) => state.app.isMenuOpen); // Use useSelector to access the state
 
-  if (!isMenuOpen) return (
-    <div className="sidebar2">
-      <div className="section">
-        <ul className="subscription-list">
-          <li>
-            <FontAwesomeIcon icon={faHome} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faFire} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faThumbsUp} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faBookOpen} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faHistory} />
-          </li>
-        </ul>
+  if (!isMenuOpen)
+    return (
+      <div className="sidebar2">
+        <div className="section">
+          <ul className="subscription-list">
+            <li>
+              <FontAwesomeIcon icon={faHome} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faFire} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faThumbsUp} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faBookOpen} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faHistory} />
+            </li>
+          </ul>
+        </div>
+        <div className="section">
+          <ul className="subscription-list">
+            <li>
+              <FontAwesomeIcon icon={faMusic} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faFootballBall} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faGamepad} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faFilm} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faNewspaper} />
+            </li>
+          </ul>
+        </div>
+        <div className="section">
+          <ul className="subscription-list">
+            <li>
+              <FontAwesomeIcon icon={faHistory} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faClock} />
+            </li>
+            <li>
+              <FontAwesomeIcon icon={faThumbsUp} />
+            </li>
+          </ul>
+        </div>
       </div>
-      <div className="section">
-        <ul className="subscription-list">
-          <li>
-            <FontAwesomeIcon icon={faMusic} /> 
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faFootballBall} /> 
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faGamepad} /> 
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faFilm} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faNewspaper} />
-          </li>
-        </ul>
-      </div>
-      <div className="section">
-        <ul className="subscription-list">
-          <li>
-            <FontAwesomeIcon icon={faHistory} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faClock} />
-          </li>
-          <li>
-            <FontAwesomeIcon icon={faThumbsUp} />
-          </li>
-        </ul>
-      </div>
-    </div>
-  );
+    );
 
   return (
     <div className="sidebar">

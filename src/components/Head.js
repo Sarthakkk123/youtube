@@ -1,12 +1,17 @@
 import React from "react";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
+import { showAlert } from "../utils/appSlice";
 
 const Head = () => {
   const dispatched = useDispatch();
 
   const toggleMenuHandler = () => {
     dispatched(toggleMenu());
+  };
+
+  const showAlerthere = () => {
+    dispatched(showAlert());
   };
 
   return (
@@ -21,7 +26,7 @@ const Head = () => {
           src="https://cdn.iconscout.com/icon/free/png-256/free-hamburger-menu-462145.png?f=webp"
           alt="menu"
         />
-        <img
+        <img onClick={() => showAlerthere()}
           className="youtube-logo"
           src="https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
           alt="youtube"
