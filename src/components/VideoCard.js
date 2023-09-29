@@ -1,10 +1,9 @@
-import React from 'react';
+import React from "react";
 
 const VideoCard = ({ info }) => {
-  // Ensure that info is not undefined and has the required properties
-  console.log(info);
+  // console.log(info);
   if (!info || !info.snippet || !info.snippet.thumbnails) {
-    return null; // or display some placeholder content
+    return null;
   }
 
   const { snippet, statistics } = info;
@@ -13,7 +12,8 @@ const VideoCard = ({ info }) => {
   return (
     <div className="video-card">
       <div className="thumbnail">
-        <img className='video'
+        <img
+          className="video"
           src={thumbnails.medium.url}
           alt="video"
           width={thumbnails.medium.width}

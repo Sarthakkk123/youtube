@@ -14,6 +14,7 @@ import {
   faNewspaper,
 } from "@fortawesome/free-solid-svg-icons";
 import { useSelector } from "react-redux";
+import { Link } from "react-router-dom";
 
 const Sidebar = () => {
   const isMenuOpen = useSelector((state) => state.app.isMenuOpen); // Use useSelector to access the state
@@ -23,9 +24,11 @@ const Sidebar = () => {
       <div className="sidebar2">
         <div className="section">
           <ul className="subscription-list">
-            <li>
-              <FontAwesomeIcon icon={faHome} />
-            </li>
+            <Link to={"/"}>
+              <li>
+                <FontAwesomeIcon icon={faHome} />
+              </li>
+            </Link>
             <li>
               <FontAwesomeIcon icon={faFire} />
             </li>
@@ -40,7 +43,7 @@ const Sidebar = () => {
             </li>
           </ul>
         </div>
-        <div className="section">
+        {/* <div className="section">
           <ul className="subscription-list">
             <li>
               <FontAwesomeIcon icon={faMusic} />
@@ -71,7 +74,7 @@ const Sidebar = () => {
               <FontAwesomeIcon icon={faThumbsUp} />
             </li>
           </ul>
-        </div>
+        </div> */}
       </div>
     );
 
@@ -80,9 +83,11 @@ const Sidebar = () => {
       <div className="section">
         <h1 className="section-title">Main</h1>
         <ul className="subscription-list">
-          <li>
-            <FontAwesomeIcon icon={faHome} /> Home
-          </li>
+          <Link to={"/"}>
+            <li>
+              <FontAwesomeIcon icon={faHome} /> Home
+            </li>
+          </Link>
           <li>
             <FontAwesomeIcon icon={faFire} /> Trending
           </li>

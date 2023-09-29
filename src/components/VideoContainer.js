@@ -13,14 +13,14 @@ const VideoContainer = () => {
   const getVideos = async () => {
     const data = await fetch(YOUTUBE_VIDEOS_API);
     const json = await data.json();
-    console.log(json.items);
+    // console.log(json.items);
     setVideos(json.items);
   };
 
   return (
     <div className="video-Container">
       {videos.map((video) => (
-        <Link to={"/watch?v=" + video.id}>
+        <Link to={"/watch?v=" + video.id} key={video.id}>
           <VideoCard key={video.id} info={video} />
         </Link>
       ))}
