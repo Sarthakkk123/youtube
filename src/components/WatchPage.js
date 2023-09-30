@@ -19,19 +19,15 @@ const WatchPage = () => {
   return (
     <>
       <div>
-        {videoId ? (
-          <iframe
-            width="900"
-            height="450"
-            src={videoSrc}
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
-        ) : (
-          <p>No video selected.</p>
-        )}
+        <iframe
+          width="900"
+          height="450"
+          src={videoSrc}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowFullScreen
+        ></iframe>
       </div>
     </>
   );

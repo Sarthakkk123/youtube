@@ -19,6 +19,7 @@ import { Link } from "react-router-dom";
 const Sidebar = () => {
   const isMenuOpen = useSelector((state) => state.app.isMenuOpen); // Use useSelector to access the state
 
+  
   if (!isMenuOpen)
     return (
       <div className="sidebar2">

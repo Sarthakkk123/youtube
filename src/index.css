@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities; */
 
-
 .main-content {
     display: flex;
     flex-direction: row;
@@ -147,6 +146,16 @@
     height: 32px;
     margin-left: 10px;
     cursor: pointer;
+}
+
+/* search suggestions */
+.search-suggestions {
+    position: absolute;
+    margin-left: 130px;
+    background: white;
+    width: 51%;
+    padding: 9px;
+    z-index: 1;
 }
 
 /* styles.css */
